@@ -1,10 +1,8 @@
 package evys42.pairs7;
 
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.function.Function;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class P7App {
@@ -48,6 +46,7 @@ public class P7App {
 	 * @param sample - an array of Integers.
 	 * @return a number of distinct pairs found.
 	 */
+	@SuppressWarnings("unused")
 	static Integer asStreams(final Integer[] sample) {
 		return (int) Stream.of(sample)
 				.flatMap(i -> Stream.of(sample)
@@ -67,9 +66,10 @@ public class P7App {
 	 * @param sample - an array of Integers.
 	 * @return a number of distinct pairs found.
 	 */
+	@SuppressWarnings("unused")
 	static Integer asNestedLoops(final Integer[] sample) {
 		// Use LinkedHashSet to preserve order.
-		final Set<Pair> pairs = new HashSet<>(sample.length * 2); 
+		final Set<Pair> pairs = new HashSet<>(sample.length << 1); 
 
 		// Generate suitable pairs.
 		for (Integer i : sample) {
