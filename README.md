@@ -19,7 +19,7 @@ java -jar target/pairs7.jar <args>
 or skip the maven build
 ```
 git clone https://github.com/evys4242/pairs7.git
-java -jar pairs7/bin/anagram.jar <args>
+java -jar pairs7/bin/pairs7.jar <args>
 ```
 
 ### Arguments:
